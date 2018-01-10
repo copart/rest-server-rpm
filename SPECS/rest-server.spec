@@ -8,9 +8,9 @@ License: BSD
 Requires(pre): shadow-utils
 BuildRequires: golang
 Source0: https://github.com/restic/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-Source1: SOURCES/rest-server.sysconfig
-Source2: SOURCES/rest-server.service
-Source3: SOURCES/rest-server.xml
+Source1: rest-server.sysconfig
+Source2: rest-server.service
+Source3: rest-server.xml
 
 %define debug_package %{nil}
 
