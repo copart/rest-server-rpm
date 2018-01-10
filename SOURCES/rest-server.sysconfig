@@ -1,0 +1,4 @@
+# Settings for the rest-server daemon.
+
+#Arguments passed to rest-server daemon, see https://github.com/restic/rest-server
+SERVERARGS="--path /tmp/restic"

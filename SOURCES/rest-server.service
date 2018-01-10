@@ -1,0 +1,16 @@
+[Unit]
+Description=Rest Server
+After=syslog.target
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/sysconfig/rest-server
+User=restsvr
+Group=restsvr
+ExecStart=/usr/bin/rest-server --path ${DOCROOT}
+Restart=always
+RestartSec=5
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target
