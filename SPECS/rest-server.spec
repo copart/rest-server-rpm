@@ -7,6 +7,7 @@ License: BSD
 
 Requires(pre): shadow-utils
 BuildRequires: golang
+BuildRequires: systemd-rpm-macros
 Source0: https://github.com/restic/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1: rest-server.sysconfig
 Source2: rest-server.service
