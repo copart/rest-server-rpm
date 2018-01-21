@@ -1,6 +1,6 @@
 Name:    rest-server
-Version: 0.9.5
-Release: 2%{?dist}
+Version: 0.9.6
+Release: 1%{?dist}
 Summary: Rest Server is a high performance HTTP server that implements restic's REST backend API
 URL:     https://restic.net
 License: BSD
@@ -53,6 +53,9 @@ install -m644 %{SOURCE3} %{buildroot}%{_prefix}/lib/firewalld/services/%{name}.x
 test -f %{_bindir}/firewall-cmd && %{_bindir}/firewall-cmd --reload --quiet
 
 %changelog
+* Sun Jan 21 2018 Steve Miller <copart@gmail.com> - 0.9.6-1
+- Updated rest-server version
+
 * Wed Jan 10 2018 Steve Miller <copart@gmail.com> - 0.9.5-2
 - Added config file to /etc/sysconfig
 - Added systemd unit file
